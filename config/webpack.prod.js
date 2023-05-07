@@ -94,12 +94,8 @@ module.exports = {
         // CSS 体积压缩
         new CssMinimizerPlugin(),
     ],
-    // 开发服务器
-    /*     devServer: {
-        host: "localhost", // 启动服务器域名
-        port: "3000", // 启动服务器端口号
-        open: true, // 是否自动打开浏览器
-    }, */
+
     // 生产模式
     mode: "production",
+    devtool: "source-map",
 };
